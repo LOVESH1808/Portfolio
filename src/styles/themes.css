@@ -1,0 +1,95 @@
+/* ─────────────────────────────────────────────
+   THEME SYSTEM
+   Add a new theme by creating a new [data-theme]
+   block and mapping the same CSS variables.
+   ───────────────────────────────────────────── */
+
+/* ── LIGHT (default) ── */
+[data-theme="light"] {
+  --color-bg:          #F1DEC9;
+  --color-bg-2:        #e8d5b7;
+  --color-bg-3:        #dcc9a8;
+
+  --color-glass-fill:  rgba(255, 251, 245, 0.68);
+  --color-glass-fill-hover: rgba(255, 251, 245, 0.90);
+  --color-glass-border: rgba(255, 255, 255, 0.60);
+  --color-glass-border-dark: rgba(200, 182, 166, 0.50);
+  --color-glass-shadow: rgba(141, 123, 104, 0.10);
+
+  --color-orb-1:       rgba(200, 182, 166, 0.45);
+  --color-orb-2:       rgba(164, 144, 124, 0.35);
+  --color-orb-3:       rgba(241, 222, 201, 0.50);
+
+  --color-text-primary:   #2e2018;
+  --color-text-secondary: #6b5040;
+  --color-text-muted:     #9a8070;
+
+  --color-accent:      #8D7B68;
+  --color-accent-2:    #A4907C;
+  --color-accent-3:    #C8B6A6;
+
+  --color-tag-bg:      rgba(164, 144, 124, 0.15);
+  --color-tag-border:  rgba(164, 144, 124, 0.30);
+  --color-tag-text:    #5c4535;
+
+  --color-btn-primary-from: #A4907C;
+  --color-btn-primary-to:   #8D7B68;
+  --color-btn-ghost-bg:     rgba(255, 251, 245, 0.50);
+
+  --color-sep:         rgba(164, 144, 124, 0.18);
+
+  --color-stat:        #3d2a18;
+
+  --toggle-track:      rgba(200, 182, 166, 0.60);
+  --toggle-dot:        #ffffff;
+  --toggle-icon:       "☀️";
+}
+
+/* ── DARK ── */
+[data-theme="dark"] {
+  --color-bg:          #1e1610;
+  --color-bg-2:        #261c12;
+  --color-bg-3:        #2e2218;
+
+  --color-glass-fill:  rgba(38, 28, 18, 0.80);
+  --color-glass-fill-hover: rgba(50, 38, 24, 0.92);
+  --color-glass-border: rgba(80, 62, 44, 0.40);
+  --color-glass-border-dark: rgba(100, 78, 56, 0.35);
+  --color-glass-shadow: rgba(0, 0, 0, 0.25);
+
+  --color-orb-1:       rgba(80, 58, 38, 0.55);
+  --color-orb-2:       rgba(60, 42, 24, 0.50);
+  --color-orb-3:       rgba(50, 35, 18, 0.45);
+
+  --color-text-primary:   #f5ede0;
+  --color-text-secondary: #c0a888;
+  --color-text-muted:     #806858;
+
+  --color-accent:      #C8B6A6;
+  --color-accent-2:    #d4c0aa;
+  --color-accent-3:    #8D7B68;
+
+  --color-tag-bg:      rgba(141, 123, 104, 0.18);
+  --color-tag-border:  rgba(141, 123, 104, 0.28);
+  --color-tag-text:    #e0c8b0;
+
+  --color-btn-primary-from: #8D7B68;
+  --color-btn-primary-to:   #6b5444;
+  --color-btn-ghost-bg:     rgba(38, 28, 18, 0.50);
+
+  --color-sep:         rgba(120, 90, 60, 0.20);
+
+  --color-stat:        #f0e0cc;
+
+  --toggle-track:      rgba(141, 123, 104, 0.50);
+  --toggle-dot:        #f0e0cc;
+  --toggle-icon:       "🌙";
+}
+
+/*
+  ── HOW TO ADD A NEW THEME ──────────────────────
+  1. Add a new block: [data-theme="forest"] { ... }
+  2. Map all the same variables above to new values
+  3. Add it to THEMES array in ThemeContext.jsx
+  4. It will automatically appear in ThemeToggle
+  ─────────────────────────────────────────────── */

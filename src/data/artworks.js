@@ -1,0 +1,94 @@
+export const artworks = [
+  {
+    id: "untitled-01",
+    title: "Untitled 01",
+    category: "Illustration",
+    year: "2025",
+    medium: "Digital",
+    description:
+      "An exploration of form and negative space using earthy tones. The composition plays with the tension between soft curves and sharp geometric interruptions.",
+    palette: ["#C8B6A6", "#A4907C", "#F1DEC9"],
+  },
+  {
+    id: "warm-study",
+    title: "Warm study",
+    category: "Study",
+    year: "2025",
+    medium: "Digital",
+    description:
+      "A colour study focused on warm amber and sienna tones, exploring how light behaves on textured surfaces.",
+    palette: ["#A4907C", "#8D7B68", "#d4b896"],
+  },
+  {
+    id: "earthy-tones",
+    title: "Earthy tones",
+    category: "Gen-art",
+    year: "2025",
+    medium: "p5.js",
+    description:
+      "Generative piece created with p5.js. The algorithm lays down hundreds of overlapping translucent strokes, building up a texture that feels both organic and systematic.",
+    palette: ["#d4bfa0", "#C8B6A6", "#e8d5b7"],
+  },
+  {
+    id: "night-study",
+    title: "Night study",
+    category: "Study",
+    year: "2024",
+    medium: "Digital",
+    description:
+      "A late-night experiment in painting with just two values — the silhouette and the light source. Simplicity as a constraint.",
+    palette: ["#2e2018", "#8D7B68", "#F1DEC9"],
+  },
+  {
+    id: "flow-03",
+    title: "Flow 03",
+    category: "Gen-art",
+    year: "2024",
+    medium: "p5.js",
+    description:
+      "Third in a series exploring fluid simulation. Particles follow a perlin noise field, leaving trails that accumulate into an image over thousands of frames.",
+    palette: ["#A4907C", "#C8B6A6", "#6b5040"],
+  },
+  {
+    id: "gen-art-07",
+    title: "Gen-art #07",
+    category: "Gen-art",
+    year: "2024",
+    medium: "Canvas API",
+    description:
+      "Recursive subdivision of a square into increasingly smaller rectangles, coloured by depth using the earthy palette.",
+    palette: ["#8D7B68", "#A4907C", "#C8B6A6"],
+  },
+  {
+    id: "form-study",
+    title: "Form study",
+    category: "Illustration",
+    year: "2024",
+    medium: "Digital",
+    description:
+      "Studying three-dimensional form using only flat shapes and strategic shadow placement. No gradients allowed.",
+    palette: ["#d4bfa0", "#8D7B68", "#2e2018"],
+  },
+  {
+    id: "circles-02",
+    title: "Circles 02",
+    category: "Gen-art",
+    year: "2024",
+    medium: "SVG",
+    description:
+      "Concentric circles with radii defined by the fibonacci sequence, each ring coloured by a sine function applied to the palette.",
+    palette: ["#C8B6A6", "#e8d5b7", "#6b5040"],
+  },
+  {
+    id: "texture-04",
+    title: "Texture 04",
+    category: "Study",
+    year: "2023",
+    medium: "Digital",
+    description:
+      'A texture study — what does rough linen look like rendered digitally? What is the minimum number of marks needed before the eye reads "fabric"?',
+    palette: ["#dcc9a8", "#A4907C", "#8D7B68"],
+  },
+];
+
+export const categories = ["All", "Illustration", "Gen-art", "Study"];
