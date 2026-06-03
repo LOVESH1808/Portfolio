@@ -7,7 +7,7 @@ import { createContext, useContext, useEffect, useState } from 'react';
    2. Add matching [data-theme="value"] block in themes.css
    ───────────────────────────────────────────── */
 export const THEMES = [
-  { value: 'light', label: 'Light', icon: '☀️' }, 
+  { value: 'light', label: 'Light', icon: '☀️' },
   { value: 'dark',  label: 'Dark',  icon: '🌙' },
   // { value: 'forest', label: 'Forest', icon: '🌿' },  ← add future themes here
 ];

@@ -1,0 +1,75 @@
+.project-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  /* glass class now provides the border — no need to add it here */
+}
+
+.project-card__icon {
+  font-size: 26px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-tag-bg);
+  border: 1px solid var(--color-tag-border);
+  border-radius: 12px;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover .project-card__icon {
+  transform: scale(1.08) rotate(-5deg);
+  background: rgba(164, 144, 124, 0.30);
+  box-shadow: 0 4px 12px var(--color-glass-shadow);
+}
+
+.project-card__title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  color: var(--color-text-primary);
+}
+
+.project-card__desc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.project-card__link {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  background: var(--color-tag-bg);
+  border: 1px solid var(--color-tag-border);
+  border-radius: 20px;
+  padding: 5px 14px;
+  text-decoration: none;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.15s ease, border-color 0.18s ease;
+}
+
+.project-card__link:hover {
+  background: var(--color-glass-fill-hover);
+  border-color: var(--color-glass-border-dark);
+  color: var(--color-text-primary);
+  transform: translateY(-1px);
+}
+
+.project-card__link--primary {
+  color: var(--color-accent-2);
+  font-weight: 500;
+}

@@ -1,0 +1,203 @@
+.contact-page {
+  padding: 8px 24px 56px;
+}
+
+.contact-page__header {
+  max-width: 520px;
+  margin-bottom: 32px;
+  padding-top: 8px;
+}
+
+.contact-page__title {
+  font-size: 42px;
+  margin: 8px 0 12px;
+}
+
+.contact-page__sub {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+.contact-page__layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Form */
+.contact-page__form-wrap {
+  padding: 36px 40px;
+}
+
+.contact-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact-page__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.contact-page__input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-glass-border-outer);
+  border-radius: 10px;
+  padding: 12px 16px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.contact-page__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.contact-page__input:focus {
+  border-color: var(--color-accent-2);
+  background: var(--color-glass-fill-hover);
+  box-shadow: 0 0 0 3px var(--color-input-focus-ring);
+}
+
+.contact-page__textarea {
+  line-height: 1.65;
+}
+
+.contact-page__submit {
+  align-self: flex-start;
+}
+
+/* Success state */
+.contact-page__success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 24px 0;
+}
+
+.contact-page__success-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-btn-primary-from), var(--color-btn-primary-to));
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(141, 123, 104, 0.30);
+}
+
+.contact-page__success h3 {
+  font-size: 22px;
+}
+
+.contact-page__success p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* Socials sidebar */
+.contact-page__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-page__socials-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.contact-page__social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 14px;
+}
+
+.contact-page__social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--color-tag-bg);
+  border: 1px solid var(--color-tag-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.contact-page__social:hover .contact-page__social-icon {
+  background: rgba(164, 144, 124, 0.28);
+  border-color: var(--color-glass-border-dark);
+  transform: scale(1.08);
+}
+
+.contact-page__social-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.contact-page__social-handle {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.contact-page__social-arrow {
+  margin-left: auto;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.contact-page__social:hover .contact-page__social-arrow {
+  color: var(--color-accent-2);
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 8px 12px 48px;
+  }
+
+  .contact-page__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page__form-wrap {
+    padding: 24px 20px;
+  }
+
+  .contact-page__title {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,115 @@
+.art-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.22s ease;
+}
+
+.art-thumb:hover {
+  transform: translateY(-4px);
+}
+
+/* Canvas area */
+.art-thumb__canvas {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  /* Visible border on the canvas */
+  border: 1px solid var(--color-glass-border-outer);
+  transition: box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.art-thumb:hover .art-thumb__canvas {
+  box-shadow: 0 10px 28px var(--color-glass-shadow-lg);
+  border-color: var(--color-glass-border-dark);
+}
+
+/* Palette swatches */
+.art-thumb__swatch {
+  flex: 1;
+  height: 100%;
+  transition: opacity 0.22s ease;
+}
+
+.art-thumb:hover .art-thumb__swatch {
+  opacity: 1 !important;
+}
+
+/* Hover overlay */
+.art-thumb__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  transition: background 0.22s ease;
+}
+
+.art-thumb:hover .art-thumb__overlay {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.art-thumb__medium {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  padding: 3px 8px;
+  transition: color 0.22s ease;
+}
+
+.art-thumb:hover .art-thumb__medium {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Info row */
+.art-thumb__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.art-thumb__title {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transition: color 0.18s ease;
+}
+
+.art-thumb:hover .art-thumb__title {
+  color: var(--color-accent-2);
+}
+
+.art-thumb__category {
+  font-size: 10px;
+}
+
+/* Size variants */
+.art-thumb--small .art-thumb__canvas {
+  aspect-ratio: 1 / 1;
+}
+
+.art-thumb--large .art-thumb__canvas {
+  aspect-ratio: 4 / 3;
+}
+
+/* Category border tints */
+.art-thumb--illustration .art-thumb__canvas {
+  border-color: rgba(200, 182, 166, 0.55);
+}
+
+.art-thumb--genart .art-thumb__canvas {
+  border-color: rgba(164, 144, 124, 0.55);
+}
+
+.art-thumb--study .art-thumb__canvas {
+  border-color: rgba(141, 123, 104, 0.55);
+}
